@@ -3,24 +3,39 @@
 
 int main(){
 
-    int num1, num2, sum, difference, multiplication;
-    double division;
-    printf("Enter an integer: ");
+    int num1, num2;
+    char arithoper;
+
+    printf("Enter first number:");
     scanf("%d", &num1);
 
-    printf("Enter another integer: ");
+    printf("Enter second number:");
     scanf("%d", &num2);
 
-    sum= num1 + num2;
-    difference= num1 - num2;
-    multiplication= num1 * num2;
-    division=(double)num1 / num2;
+    printf("Enter an operator: ");
+    scanf(" %c", &arithoper);
 
-    printf("The sum between %d and %d is %d \n", num1, num2, sum);
-    printf("The difference between %d and %d is %d \n", num1, num2, difference);
-    printf("The product between %d and %d is %d \n", num1, num2, multiplication);
-    printf("The quotient between %d and %d is %f \n", num1, num2, division);
 
-    return 0;
+    switch(arithoper){
+
+        case '+':{printf("The sum is %d", num1 + num2);
+        break;}
+
+        case '-':{printf("The difference is %d", num1 - num2);
+        break;}
+
+        case '*':{printf("The product is %d", num1 * num2);
+        break;}
+
+        case '/':{printf("The quotient is %f",(double)num1 / num2);
+        break;}
+
+        case '%':{printf("The remainder is %d", num1 % num2);
+        break;}
+
+        default:{printf("Wrong operator! \n");
+        }
+    }
+return 0;
 
 }

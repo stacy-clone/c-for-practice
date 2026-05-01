@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1777409851 source:c:\users\administrator\onedrive\desktop\c files\switch\switch\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1777409006 source:c:\users\administrator\onedrive\desktop\c files\switch\switch\switch.c
+	<stdio.h>
+	<stdlib.h>
+
